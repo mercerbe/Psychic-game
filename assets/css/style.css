@@ -1,0 +1,19 @@
+body {
+  background-color: #231f20;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+h1,
+h2,
+footer,
+p {
+  color: #f99b24;
+}
+
+#wins,
+#losses,
+#guessesLeft,
+#guessesLogged {
+  color: #18a6c9;
+}
