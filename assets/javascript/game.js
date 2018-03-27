@@ -3,18 +3,13 @@
 
 //Game Variables//
 var userGuesses = [];
-document.getElementById("userGuesses").innerHTML = userGuesses;
-document.getElementById("input").innerHTML = input;
 var alphabet = ("abcdefghijklmnopqrstuvwxyz").split("");
 var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
 
 //Input Output Variables//
 var guessesLeft = 12;
-document.getElementById("guessesLeft").innerHTML = guessesLeft;
 var wins = 0;
-document.getElementById("wins").innerHTML = wins;
 var losses = 0;
-document.getElementById("losses").innerHTML = losses;
 
 //buttons//
 var startGameButton = document.querySelector("#startGame");
@@ -78,3 +73,10 @@ function gamePlay() {
 
 
 };
+
+//HTML
+document.getElementById("userGuesses").innerHTML = userGuesses;
+document.getElementById("input").innerHTML = input;
+document.getElementById("guessesLeft").innerHTML = guessesLeft;
+document.getElementById("wins").innerHTML = wins;
+document.getElementById("losses").innerHTML = losses;

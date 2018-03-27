@@ -1,14 +1,53 @@
+html {
+  height:100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after,{
+  box-sizing: inherit;
+}
+
 body {
   background-color: #231f20;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
+  position: relative;
+  margin:0;
+  min-height: 100%;
+}
+
+.wrapper {
+  margin-bottom:3%;
 }
 
 h1,
 h2,
-footer,
-p {
+p,
+.footer {
   color: #f99b24;
+}
+
+h1 {
+  text-shadow: 5px 5px white;
+}
+
+.floating {
+  float:left;
+  width: 60%;
+
+}
+
+.floating-p {
+  width:20%;
+  margin-top: 20%;
+}
+
+.container {
+  clear:both;
+
 }
 
 #wins,
@@ -16,4 +55,24 @@ p {
 #guessesLeft,
 #guessesLogged {
   color: #18a6c9;
+}
+
+#resetButton {
+  padding: 5px 10px;
+}
+
+#resetButton:hover {
+  background-color: #f99b24;
+}
+
+.footer {
+  width:100%;
+  background-color: #18a6c9;
+  padding-top:1%;
+  padding-bottom: 1%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
 }

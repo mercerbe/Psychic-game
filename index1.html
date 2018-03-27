@@ -11,9 +11,11 @@
 <body>
   <div class="wrapper">
     <h1>Psychic Game</h1>
-    <img src="https://static1.squarespace.com/static/5942d5a5f5e231d498cb0090/599e42639f8dce417ce56e98/599e427a579fb33c57427c11/1503543932920/Psychic-Reader---Gif---09.gif?format=1000w" alt="psychic">
-    <p>Can You Guess What Letter I'm Thinking Of?</p>
-    <p>Press Letters On Your Keyboard And Match Me In 12 Or Less Guesses To Win!</p>
+    <div class="imgContainer">
+      <p class="floating floating-p">Can You Guess What Letter I'm Thinking Of?</p>
+      <img class="floating" src="https://static1.squarespace.com/static/5942d5a5f5e231d498cb0090/599e42639f8dce417ce56e98/599e427a579fb33c57427c11/1503543932920/Psychic-Reader---Gif---09.gif?format=1000w" alt="psychic">
+      <p class="floating floating-p">Press Letters On Your Keyboard And Match Me In 12 Or Less Guesses To Win!</p>
+    </div>
     <div class="container">
         <h2>Wins:</h2>
           <p id="wins">0</p>
@@ -31,7 +33,9 @@
 
 
 
-  <footer>&copyBenMercerCodes</footer>
+  <div class="footer">
+    <p>&copyBenMercerCodes</p>  
+  </div>
   <script type="text/javascript" src="assets/javascript/game1.js"></script>
 </body>
 </html>

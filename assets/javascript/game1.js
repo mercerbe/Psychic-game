@@ -41,5 +41,7 @@ document.onkeyup = function(event) {
     document.getElementById("losses").innerHTML = losses;
     document.getElementById("guessesLeft").innerHTML = guessesLeft;
     document.getElementById("guessesLogged").innerHTML = guessesLogged;
+    var resetButton = document.querySelector("#resetButton");
+    resetButton.style.cursor = "pointer";
 
 }
