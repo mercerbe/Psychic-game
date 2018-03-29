@@ -8,8 +8,7 @@ var currentGuess = null;
 var psychicLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
 console.log("psychic letter: " + psychicLetter);
 
-//Game functions
-
+//Game function
 document.onkeyup = function(event) {
 
   var currentGuess = String.fromCharCode(event.keyCode).toLowerCase();
@@ -37,6 +36,7 @@ document.onkeyup = function(event) {
       console.log("psychic letter: " + psychicLetter);
     };
 
+//HTML
     document.getElementById("wins").innerHTML = wins;
     document.getElementById("losses").innerHTML = losses;
     document.getElementById("guessesLeft").innerHTML = guessesLeft;
